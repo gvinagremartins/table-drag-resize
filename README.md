@@ -44,9 +44,13 @@ This means:
 
 Do not copy a `data.json` from someone else's vault: it holds that vault's table sizes.
 
-### BRAT
+### BRAT (recommended while this is in development)
 
-Add this repository's URL in the [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin to install and update it from GitHub.
+1. Install the [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin from Settings → Community plugins → Browse.
+2. In BRAT's settings choose **Add Beta plugin** and enter `gvinagremartins/table-resizer`.
+3. Enable **Table Resizer** under Settings → Community plugins.
+
+BRAT installs the latest release of this repository and keeps it updated.
 
 ## Known limitations
 

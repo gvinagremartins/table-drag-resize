@@ -5,5 +5,6 @@
   "minAppVersion": "1.5.0",
   "description": "Resize tables like images: drag handles for the whole table, each column and each row. Sizes are stored in an HTML comment above the table.",
   "author": "gvinagremartins",
-  "isDesktopOnly": true
+  "isDesktopOnly": true,
+  "authorUrl": "https://github.com/gvinagremartins"
 }
