@@ -1,0 +1,104 @@
+.workspace-leaf-content[data-type="markdown"] > .view-content {
+  container-type: inline-size;
+}
+
+.markdown-preview-sizer,
+.markdown-preview-section,
+.cm-contentContainer,
+.cm-content,
+.cm-sizer {
+  overflow: visible;
+}
+
+.trz-host {
+  position: relative;
+}
+
+/* Sized tables: exact width, centered when wider than the text column,
+   scrollable only when wider than the pane. */
+.trz-wrap {
+  --trz-eff: calc(100vw - 64px);
+  width: max-content;
+  min-width: 0;
+  max-width: var(--trz-eff);
+  position: relative;
+  left: 50%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateX(-50%);
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+@supports (width: 1cqw) {
+  .trz-wrap {
+    --trz-eff: calc(100cqw - 64px);
+  }
+}
+
+.trz-wrap .table-wrapper {
+  overflow: visible;
+  width: auto;
+  max-width: none;
+}
+
+.trz-wrap table.trz-table {
+  table-layout: fixed;
+  max-width: none;
+  margin: 0;
+}
+
+.trz-wrap table.trz-table th,
+.trz-wrap table.trz-table td {
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+/* Handles */
+.trz-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.trz-h {
+  position: absolute;
+  pointer-events: auto;
+  background: transparent;
+  touch-action: none;
+}
+
+.trz-h:hover,
+.trz-h.active {
+  background: var(--interactive-accent);
+  opacity: 0.55;
+}
+
+.trz-col {
+  width: 6px;
+  cursor: col-resize;
+}
+
+.trz-row {
+  height: 6px;
+  cursor: row-resize;
+}
+
+.trz-corner {
+  width: 14px;
+  height: 14px;
+  cursor: nwse-resize;
+  background: var(--interactive-accent);
+  opacity: 0.35;
+  border-radius: 3px;
+}
+
+.trz-corner:hover,
+.trz-corner.active {
+  opacity: 0.8;
+}
