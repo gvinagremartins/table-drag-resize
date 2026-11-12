@@ -3,7 +3,7 @@
   "name": "Table Resizer",
   "version": "0.1.0",
   "minAppVersion": "1.5.0",
-  "description": "Resize tables like images: drag handles for the whole table, each column and each row. Sizes are stored in an HTML comment above the table.",
+  "description": "Resize tables with drag handles for the whole table, each column and each row (Live Preview). Work in progress.",
   "author": "gvinagremartins",
   "isDesktopOnly": true,
   "authorUrl": "https://github.com/gvinagremartins"
