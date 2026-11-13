@@ -1,6 +1,6 @@
 {
-  "id": "table-resizer",
-  "name": "Table Resizer",
+  "id": "table-drag-resizer",
+  "name": "Table Drag Resizer",
   "version": "0.1.0",
   "minAppVersion": "1.5.0",
   "description": "Resize tables with drag handles for the whole table, each column and each row (Live Preview). Work in progress.",
