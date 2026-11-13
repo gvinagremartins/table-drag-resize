@@ -1,4 +1,4 @@
-# Table Resizer
+# Table Drag Resizer
 
 Resize Markdown tables in Obsidian the way you resize images: drag handles for the whole table, for each column and for each row. Sized tables can break out of the normal text column and stay centered, without widening your regular note text.
 
