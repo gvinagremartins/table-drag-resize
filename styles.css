@@ -23,12 +23,16 @@
   max-width: var(--trz-eff);
   position: relative;
   left: 50%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
   transform: translateX(-50%);
   overflow-x: auto;
   overflow-y: hidden;
   box-sizing: border-box;
+}
+
+/* Higher specificity instead of !important, to beat theme/Obsidian margins. */
+body .trz-wrap.trz-host {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @supports (width: 1cqw) {
